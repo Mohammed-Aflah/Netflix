@@ -23,7 +23,7 @@ body {
     url("https://assets.nflxext.com/ffe/siteui/vlv3/39f3c979-c105-4948-9c51-611eedf3a6fd/71ec72f0-c17a-4100-a2a3-a52e7b8ac733/IN-en-20230612-popsignuptwoweeks-perspective_alpha_website_small.jpg");
   --font: font-family: 'Netflix Font', sans-serif;
   --border: 10px solid #232323;
-  --bgColor:#e50914;
+  --bgColor:rgb(193, 17, 25);
 }
 .home {
   width: 100%;
