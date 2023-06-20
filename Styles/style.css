@@ -45,7 +45,6 @@ body {
   height: 5rem;
   width: 100%;
   background: transparent;
-  /* position: relative; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,7 +58,6 @@ body {
   height: 40px;
 }
 .home .nav-bar .nav-menu {
-  /* margin-right: 50px; */
   position: absolute;
   display: flex;
   right: 12%;
