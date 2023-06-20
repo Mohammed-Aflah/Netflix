@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Akaya+Telivigala&family=Amatic+SC&family=Comfortaa:wght@300;400;600&family=Fira+Sans:ital,wght@0,200;0,300;0,500;1,100;1,200;1,700;1,800&family=Gemunu+Libre:wght@200;500;600;700;800&family=Glass+Antiqua&family=Josefin+Slab:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,300&family=Kanit:ital,wght@0,200;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,400;1,600;1,800;1,900&family=Life+Savers:wght@400;700&family=Michroma&family=Mukta:wght@200;400&family=Noto+Sans+Mono:wght@100;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,700;1,400&family=Orbitron:wght@400;500;600;700;800&family=Oswald:wght@500&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400&family=Roboto:wght@100;300;400;500;700&family=Rubik+Vinyl&family=Satisfy&family=Shadows+Into+Light&family=Snippet&family=Solitreo&family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Akaya+Telivigala&family=Amatic+SC&family=Bebas+Neue&family=Comfortaa:wght@300;400;600&family=Fira+Sans:ital,wght@0,200;0,300;0,500;1,100;1,200;1,700;1,800&family=Gemunu+Libre:wght@200;500;600;700;800&family=Glass+Antiqua&family=Josefin+Slab:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,300&family=Kanit:ital,wght@0,200;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,400;1,600;1,800;1,900&family=Life+Savers:wght@400;700&family=Michroma&family=Mukta:wght@200;400&family=Noto+Sans+Mono:wght@100;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,700;1,400&family=Orbitron:wght@400;500;600;700;800&family=Oswald:wght@500&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400&family=Roboto:wght@100;300;400;500;700&family=Rubik+Vinyl&family=Satisfy&family=Shadows+Into+Light&family=Snippet&family=Solitreo&family=Syncopate:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+*::selection {
+  background: rgb(150, 26, 94);
+}
+body {
+  height: 100vh;
+}
+:root {
+  --bgImg: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.868) 0,
+      rgba(11, 11, 11, 0.571) 60%,
+      rgb(0, 0, 0) 100%
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/39f3c979-c105-4948-9c51-611eedf3a6fd/71ec72f0-c17a-4100-a2a3-a52e7b8ac733/IN-en-20230612-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  --font: "Akaya Telivigala", cursive;
+  --border: 10px solid #232323;
+}
+.home {
+  width: 100%;
+  height: 95vh;
+  background-image: var(--bgImg);
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: var(--border);
+}
+/* Header part Start */
+.home .nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5rem;
+  width: 100%;
+  background: transparent;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .nav-bar .nav-logo {
+  position: absolute;
+  left: 11%;
+}
+.home .nav-bar .nav-logo img {
+  width: 120px;
+  height: 40px;
+}
+.home .nav-bar .nav-menu {
+  /* margin-right: 50px; */
+  position: absolute;
+  display: flex;
+  right: 12%;
+}
+.home .nav-bar .nav-menu .sel,
+.bottom .lis .lifoot .sel {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  /* background: #101011; */
+  /* opacity: 0.7; */
+  color: white;
+  border: 2px solid #575655;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.home .nav-bar .nav-menu .sel span,
+.bottom .lis .lifoot .sel span {
+  font-size: 18px;
+}
+.home .nav-bar .nav-menu .sel select,
+.bottom .lis .lifoot .sel select {
+  --webkit-appearance: none;
+  margin-left: 10px;
+  width: 70px;
+  height: 32px;
+  font-size: 15px;
+  border-radius: 3px;
+  background: transparent;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  border: none;
+}
+.home .nav-bar .nav-menu .sel select option,
+.bottom .lis .lifoot .sel select option {
+  width: 120px;
+  background: #101011;
+  opacity: 0.7;
+  height: 30px;
+}
+
+.home .nav-bar .nav-menu button {
+  height: 30px;
+  width: 70px;
+  border: none;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 4px;
+  margin-left: 20px;
+  background-color: red;
+  cursor: pointer;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+/* Header part End */
+
+/* Content part Start */
+.home .main-content {
+  width: 70%;
+  height: 300px;
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .main-content .content-head h1 {
+  font-family: sans-serif;
+  /* font-family: "Kanit", sans-serif; */
+
+  /* font-family: 'Poppins', sans-serif; */
+
+  color: #fff;
+  font-weight: 800;
+  font-size: 45px;
+}
+.home .main-content .content-head p,
+.final footer p {
+  color: #fff;
+  font-family: 700;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.home .main-content .content-head p:nth-child(3) {
+  font-size: 21px;
+}
+.home .main-content .controlls,
+.final .controlls {
+  width: 100%;
+  height: 70px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .main-content .controlls input,
+.final .controlls input {
+  height: 50px;
+  width: 350px;
+  padding: 15px;
+  border: 1.3px solid #575655;
+  border-radius: 3px;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+  background: #101011;
+  opacity: 0.8;
+  margin-right: 10px;
+}
+.home .main-content .controlls input::placeholder {
+  color: #fffefe;
+}
+.home .main-content .controlls button,
+.final .controlls button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  height: 50px;
+  width: 180px;
+  font-size: 19px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  background-color: red;
+  color: #fff;
+}
+
+/* Sections Designing  Start*/
+.sections {
+  width: 100%;
+  min-height: 75vh;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: var(--border);
+}
+.sections .sc {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sections .sc .head {
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.sections .sc .head h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.sections .sc .head p {
+  font-size: 25px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.sections .sc .img {
+  width: 50%;
+  height: 100%;
+}
+.sections .sc .img img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 920px) {
+  .sections .sc {
+    flex-direction: column;
+  }
+}
+
+/* Final Part Desing */
+
+.final {
+  min-height: 100vh;
+  background: #000;
+  border-bottom: var(--border);
+}
+.final header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+.final header h1 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 800;
+}
+.final .lists {
+  width: 75%;
+  min-height: 550px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.final .lists .list {
+  display: flex;
+  width: 100%;
+  background: #2d2d2d;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+.final .lists .list .p-1 {
+  margin: 17px;
+}
+.final .lists .list .s-1 {
+  margin: 5px;
+}
+.final .lists .list p {
+  font-size: 25px;
+  margin-left: 10px;
+}
+.final .lists .list span {
+  font-size: 40px;
+}
+.final footer {
+  height: 200px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.final .controlls input {
+  width: 380px;
+  height: 55px;
+}
+.final .controlls button {
+  height: 55px;
+  font-size: 23px;
+  width: 180px;
+}
+.final footer p {
+  font-size: 20px;
+}
+
+/* Bottom Part */
+.bottom {
+  min-height: 60vh;
+  background: #000;
+}
+.bottom .lihead {
+  width: 75%;
+  height: 90px;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+.bottom .lis {
+  width: 75%;
+  height: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.bottom .lis .links {
+  width: 30%;
+  height: 65%;
+  padding: 5px;
+  padding: 10px;
+  margin-right: 20px;
+}
+.bottom .lihead p,
+a,
+.bottom .lifoot p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+.bottom .lis .links a {
+  display: block;
+  margin-top: 10px;
+}
+.bottom .lis .lifoot {
+  width: 90%;
+  padding: 10px;
+  min-height: 70px;
+}
+.bottom .lis .lifoot .sel {
+  width: 110px;
+}
+.bottom .lifoot p {
+  margin-top: 20px;
+}
