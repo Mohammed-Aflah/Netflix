@@ -10,8 +10,9 @@
 *::selection {
   background: rgb(150, 26, 94);
 }
-body {
-  height: 100vh;
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 :root {
   --bgImg: linear-gradient(
@@ -25,6 +26,7 @@ body {
   --border: 10px solid #232323;
   --bgColor:#e50914;
   --textCol:rgb(255,255,255);
+  --hovCol:rgb(193, 17, 25);
 }
 .home {
   width: 100%;
@@ -142,7 +144,7 @@ body {
 .home .main-content .content-head h1 {
   font-family: var(--font);
   color: var(--textCol);
-  font-weight: 800;
+  font-weight: bolder;
   font-size: 3rem;
 }
 .home .main-content .content-head p,
@@ -381,3 +383,14 @@ a,
   font-weight: 600;
 }
 /* Bottom part End */
+
+
+::-webkit-scrollbar{
+  background: #000;
+}
+.home .nav-bar .nav-menu button:hover,
+.home .main-content .controlls button:hover,
+.final .controlls button:hover,
+.final .controlls button:hover{
+  background: var(--hovCol);
+}
